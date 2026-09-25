@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" /><meta name="theme-color" content="#101617" />
   <meta name="description" content="SWAN CRM MVP สำหรับบริหาร Companies, Pipeline, Activity, Tasks และ Company Detail" />
-  <title>SWAN CRM / Lead Watch</title><link rel="manifest" href="manifest.webmanifest" /><link rel="stylesheet" href="styles.css?v=20260917-2010" />
+  <title>SWAN CRM / Lead Watch</title><link rel="manifest" href="manifest.webmanifest" /><link rel="stylesheet" href="styles.css?v=20260925-1416" />
   <style>.crm-nav{display:flex;gap:8px;position:sticky;top:0;z-index:8;margin:0 0 22px;padding:9px;background:#172522f2;border:1px solid #ffffff18;border-radius:12px;box-shadow:0 12px 30px #173d2d20;backdrop-filter:blur(12px)}.crm-nav a{flex:1;padding:10px 12px;border-radius:8px;color:#d8e8e1;text-align:center;text-decoration:none;font:700 11px 'DM Mono',monospace}.crm-nav a:hover,.crm-nav a:focus-visible{background:var(--teal);color:#07110f;outline:none}@media(max-width:850px){.crm-nav{display:none}}</style>
 </head>
 <body>
@@ -17,5 +17,5 @@
   <footer><span>ข้อมูลในเครื่องนี้ · ใช้ไฟล์ CSV เป็นแหล่งข้อมูลหลัก</span><label class="import-label">นำเข้า CSV <input id="fileInput" type="file" accept=".csv,text/csv" /></label></footer></div>
   <nav class="bottom-nav" aria-label="SWAN CRM เมนูหลัก"><a class="bottom-nav-item active" href="#companies"><span>▦</span><strong>Companies</strong></a><a class="bottom-nav-item" href="#salesPipeline"><span>◈</span><strong>Pipeline</strong></a><a class="bottom-nav-item" href="#activity"><span>↻</span><strong>Activity</strong></a><a class="bottom-nav-item" href="#tasks"><span>✓</span><strong>Tasks</strong></a></nav>
   <div id="editModal" class="modal" aria-label="Company Detail" hidden><div class="modal-card"><div class="modal-head"><div><p class="eyebrow">COMPANY DETAIL</p><h2>รายละเอียดบริษัทและนัดหมาย</h2></div><button id="closeModal" class="close" aria-label="ปิด">×</button></div><p id="editCompany" class="edit-company"></p><label>วันที่นัดหมาย<input id="editDate" type="date" /></label><label>เวลา<input id="editTime" type="time" /></label><label>สถานะ<select id="editStatus"><option>รอยืนยัน</option><option>ยืนยันแล้ว</option><option>เลื่อนนัด</option><option>ยกเลิก</option></select></label><label>Comment / หมายเหตุ<textarea id="editComment" rows="4" placeholder="เช่น มีทีม Engineer เข้าร่วม หรือรอลูกค้ายืนยันเวลา"></textarea></label><div class="modal-actions"><button id="cancelEdit" class="button ghost">ยกเลิก</button><button id="saveEdit" class="button accent">บันทึกการแก้ไข</button></div></div></div><div id="toast" class="toast" role="status"></div>
-  <script src="app.js?v=20260917-2010"></script>
+  <script src="app.js?v=20260925-1416"></script>
 </body></html>
